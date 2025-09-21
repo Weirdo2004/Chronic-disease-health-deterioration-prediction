@@ -98,7 +98,7 @@ def preprocess_and_predict(patient_df: pd.DataFrame, patient_id: str):
 
 
 def call_gemini_api(temp_data: dict, prediction: int, disease: str):
-    GEMINI_API_KEY = "AIzaSyBSxSAksIjBg5RzoU0RK3HBO0aTIiP0SUw"
+    GEMINI_API_KEY = ""
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key={GEMINI_API_KEY}"
 
     prompt = f"""
